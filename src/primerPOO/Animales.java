@@ -4,7 +4,7 @@ public class Animales {
 
 	// Atributos
 	String nombre;
-	int id;
+	static int iD=0;
 	int edad;
 	
 	// Métodos
@@ -14,6 +14,25 @@ public class Animales {
 	
 	public void mostrarCaracteristicas(String nombre, int edad, int ID) {
 		System.out.println("Mi Animal se llama " + nombre + ", tiene " + edad + " años y su ID es " + ID);
+	}
+	
+	// Método constructor por defecto
+	public Animales() {
+		iD++;
+	}
+
+	// Otros métodos constructores
+	public Animales(String nombre) {
+		iD++;
+		this.nombre = nombre;
+		System.out.println("El nombre de mi mascota es " + this.nombre);
+	}
+
+	public Animales(String nombre, int edad) {  // Es un método contructor
+		iD++;
+		this.nombre = nombre;
+		this.edad = edad;
+		System.out.println("El nombre de mi mascota es " + this.nombre + ", su edad es " + this.edad + " años y su ID es " + iD);
 	}
 	
 }

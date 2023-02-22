@@ -2,7 +2,7 @@ package segundoPOO;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main2 {
 
 	public static void main(String[] args) {
 		
@@ -25,6 +25,11 @@ public class Main {
 		double incremento = teclado.nextDouble();
 		p.crecer(incremento);
 		System.out.printf("Tu estatura ahora es: %.2f", p.estatura);
+		
+		Persona a = new Persona("Pepe", 15, 1.90);
+		System.out.println(a.nombre + " " + a.edad + " " + a.estatura);
+		
+		
 		
 		// Cerramos el objeto 'scanner'
 		teclado.close();
