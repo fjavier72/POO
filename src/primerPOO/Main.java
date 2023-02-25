@@ -1,7 +1,5 @@
 package primerPOO;
 
-import static iu.MiMenu.*;
-
 public class Main {
 
 	//@SuppressWarnings("static-access") -> para suprimir los mensajes de tipo 'Warnings'
@@ -22,6 +20,8 @@ public class Main {
 		//mostrarMenu();
 		// Llamar al método constructor de solo el nombre
 		Animales miMascota2 = new Animales("Candela");
+		miMascota2.edad = 16;
+		miMascota2.mostrarCaracteristicas(miMascota2.nombre, miMascota2.edad, Animales.iD);
 		
 		Animales miMascota3 = new Animales("Candela2", 15);
 		System.out.println("El ID de " + miMascota3.nombre + " es " + Animales.iD);
